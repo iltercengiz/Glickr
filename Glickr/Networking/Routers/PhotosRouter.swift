@@ -10,6 +10,8 @@ import Foundation
 import Alamofire
 import ObjectMapper
 
+private let extras = "owner_name,date_taken,media,url_l"
+
 enum PhotosRouter: URLRequestConvertible {
     
     case Recents
@@ -28,11 +30,13 @@ enum PhotosRouter: URLRequestConvertible {
             switch self {
             case .Recents:
                 return [
-                    "method": method
+                    "method": method,
+                    "extras": extras
                 ]
             case .Search(let query):
                 return [
                     "method": method,
+                    "extras": extras,
                     "text": query
                 ]
             }
