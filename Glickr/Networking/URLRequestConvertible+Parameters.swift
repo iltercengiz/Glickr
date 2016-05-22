@@ -9,8 +9,8 @@
 import Foundation
 import Alamofire
 
-let HostURL = NSURL(string: "https://api.flickr.com/services/rest/")!
-let APIKey = "d3a68da120b480a1694db7cf675fcd43"
+private let HostURL = NSURL(string: "https://api.flickr.com/services/rest/")!
+private let APIKey = "d3a68da120b480a1694db7cf675fcd43"
 
 extension URLRequestConvertible {
     
