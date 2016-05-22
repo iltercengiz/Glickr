@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		25A2ECA9695420E5A36D2A61 /* Pods_GlickrUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3832A4C0EB96639CB11AE8A3 /* Pods_GlickrUITests.framework */; };
 		36871ADC1CF21F2100152A6A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36871ADB1CF21F2100152A6A /* AppDelegate.swift */; };
 		36871ADE1CF21F2100152A6A /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36871ADD1CF21F2100152A6A /* FirstViewController.swift */; };
 		36871AE01CF21F2100152A6A /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36871ADF1CF21F2100152A6A /* SecondViewController.swift */; };
@@ -15,6 +16,8 @@
 		36871AE81CF21F2100152A6A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 36871AE61CF21F2100152A6A /* LaunchScreen.storyboard */; };
 		36871AF31CF21F2100152A6A /* GlickrTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36871AF21CF21F2100152A6A /* GlickrTests.swift */; };
 		36871AFE1CF21F2100152A6A /* GlickrUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36871AFD1CF21F2100152A6A /* GlickrUITests.swift */; };
+		7150D50812ACD93ECB95BAEE /* Pods_GlickrTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C149D4BA314F543CE6CCD4E /* Pods_GlickrTests.framework */; };
+		A5A5AF948EA02890D6F2B5BF /* Pods_Glickr.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5969E509935D8ED53CBCC391 /* Pods_Glickr.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +38,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2C149D4BA314F543CE6CCD4E /* Pods_GlickrTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GlickrTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		335F8E4B2D8FBC4DFA0BFDF0 /* Pods-GlickrUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GlickrUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GlickrUITests/Pods-GlickrUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		36871AD81CF21F2100152A6A /* Glickr.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Glickr.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		36871ADB1CF21F2100152A6A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		36871ADD1CF21F2100152A6A /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
@@ -49,6 +54,13 @@
 		36871AF91CF21F2100152A6A /* GlickrUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GlickrUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		36871AFD1CF21F2100152A6A /* GlickrUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlickrUITests.swift; sourceTree = "<group>"; };
 		36871AFF1CF21F2100152A6A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3832A4C0EB96639CB11AE8A3 /* Pods_GlickrUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GlickrUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		49C8D50CE1415D80CCF7C03A /* Pods-GlickrUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GlickrUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-GlickrUITests/Pods-GlickrUITests.release.xcconfig"; sourceTree = "<group>"; };
+		5969E509935D8ED53CBCC391 /* Pods_Glickr.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Glickr.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7AB9AFAE21DE9426BD1A22C5 /* Pods-GlickrTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GlickrTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GlickrTests/Pods-GlickrTests.debug.xcconfig"; sourceTree = "<group>"; };
+		8B3FA7BD712E6F102E0AFD7D /* Pods-Glickr.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Glickr.release.xcconfig"; path = "Pods/Target Support Files/Pods-Glickr/Pods-Glickr.release.xcconfig"; sourceTree = "<group>"; };
+		C40C1CEAF06F7DAA20713944 /* Pods-Glickr.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Glickr.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Glickr/Pods-Glickr.debug.xcconfig"; sourceTree = "<group>"; };
+		F3BC0B52687729E594C5062C /* Pods-GlickrTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GlickrTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-GlickrTests/Pods-GlickrTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +68,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A5A5AF948EA02890D6F2B5BF /* Pods_Glickr.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +76,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7150D50812ACD93ECB95BAEE /* Pods_GlickrTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,6 +84,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				25A2ECA9695420E5A36D2A61 /* Pods_GlickrUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +98,8 @@
 				36871AF11CF21F2100152A6A /* GlickrTests */,
 				36871AFC1CF21F2100152A6A /* GlickrUITests */,
 				36871AD91CF21F2100152A6A /* Products */,
+				8C34007926483714EDF1EBEA /* Pods */,
+				70770338CA61119D36CE0A20 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -128,6 +145,29 @@
 			path = GlickrUITests;
 			sourceTree = "<group>";
 		};
+		70770338CA61119D36CE0A20 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5969E509935D8ED53CBCC391 /* Pods_Glickr.framework */,
+				2C149D4BA314F543CE6CCD4E /* Pods_GlickrTests.framework */,
+				3832A4C0EB96639CB11AE8A3 /* Pods_GlickrUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8C34007926483714EDF1EBEA /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C40C1CEAF06F7DAA20713944 /* Pods-Glickr.debug.xcconfig */,
+				8B3FA7BD712E6F102E0AFD7D /* Pods-Glickr.release.xcconfig */,
+				7AB9AFAE21DE9426BD1A22C5 /* Pods-GlickrTests.debug.xcconfig */,
+				F3BC0B52687729E594C5062C /* Pods-GlickrTests.release.xcconfig */,
+				335F8E4B2D8FBC4DFA0BFDF0 /* Pods-GlickrUITests.debug.xcconfig */,
+				49C8D50CE1415D80CCF7C03A /* Pods-GlickrUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -135,9 +175,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 36871B021CF21F2100152A6A /* Build configuration list for PBXNativeTarget "Glickr" */;
 			buildPhases = (
+				0D70B571A05E3B8DCDC01EA0 /* 📦 Check Pods Manifest.lock */,
 				36871AD41CF21F2100152A6A /* Sources */,
 				36871AD51CF21F2100152A6A /* Frameworks */,
 				36871AD61CF21F2100152A6A /* Resources */,
+				2699B42A1B8835C641FD8A6A /* 📦 Embed Pods Frameworks */,
+				DB5CCF4A9C1030874F43D576 /* 📦 Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -152,9 +195,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 36871B051CF21F2100152A6A /* Build configuration list for PBXNativeTarget "GlickrTests" */;
 			buildPhases = (
+				95CDC9E585D7E415046BF269 /* 📦 Check Pods Manifest.lock */,
 				36871AEA1CF21F2100152A6A /* Sources */,
 				36871AEB1CF21F2100152A6A /* Frameworks */,
 				36871AEC1CF21F2100152A6A /* Resources */,
+				681589AED2AE95C69169F11B /* 📦 Embed Pods Frameworks */,
+				CDC93E0631BF4C983AC4288D /* 📦 Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -170,9 +216,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 36871B081CF21F2100152A6A /* Build configuration list for PBXNativeTarget "GlickrUITests" */;
 			buildPhases = (
+				97D6B3E2B36F99B0881057E4 /* 📦 Check Pods Manifest.lock */,
 				36871AF51CF21F2100152A6A /* Sources */,
 				36871AF61CF21F2100152A6A /* Frameworks */,
 				36871AF71CF21F2100152A6A /* Resources */,
+				F63393D817415C2AA68641F3 /* 📦 Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -253,6 +301,129 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0D70B571A05E3B8DCDC01EA0 /* 📦 Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		2699B42A1B8835C641FD8A6A /* 📦 Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Glickr/Pods-Glickr-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		681589AED2AE95C69169F11B /* 📦 Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GlickrTests/Pods-GlickrTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		95CDC9E585D7E415046BF269 /* 📦 Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		97D6B3E2B36F99B0881057E4 /* 📦 Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		CDC93E0631BF4C983AC4288D /* 📦 Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GlickrTests/Pods-GlickrTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DB5CCF4A9C1030874F43D576 /* 📦 Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Glickr/Pods-Glickr-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F63393D817415C2AA68641F3 /* 📦 Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GlickrUITests/Pods-GlickrUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		36871AD41CF21F2100152A6A /* Sources */ = {
@@ -401,6 +572,7 @@
 		};
 		36871B031CF21F2100152A6A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C40C1CEAF06F7DAA20713944 /* Pods-Glickr.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Glickr/Info.plist;
@@ -412,6 +584,7 @@
 		};
 		36871B041CF21F2100152A6A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8B3FA7BD712E6F102E0AFD7D /* Pods-Glickr.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Glickr/Info.plist;
@@ -423,6 +596,7 @@
 		};
 		36871B061CF21F2100152A6A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7AB9AFAE21DE9426BD1A22C5 /* Pods-GlickrTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = GlickrTests/Info.plist;
@@ -435,6 +609,7 @@
 		};
 		36871B071CF21F2100152A6A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F3BC0B52687729E594C5062C /* Pods-GlickrTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = GlickrTests/Info.plist;
@@ -447,6 +622,7 @@
 		};
 		36871B091CF21F2100152A6A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 335F8E4B2D8FBC4DFA0BFDF0 /* Pods-GlickrUITests.debug.xcconfig */;
 			buildSettings = {
 				INFOPLIST_FILE = GlickrUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -458,6 +634,7 @@
 		};
 		36871B0A1CF21F2100152A6A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 49C8D50CE1415D80CCF7C03A /* Pods-GlickrUITests.release.xcconfig */;
 			buildSettings = {
 				INFOPLIST_FILE = GlickrUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -486,6 +663,7 @@
 				36871B041CF21F2100152A6A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		36871B051CF21F2100152A6A /* Build configuration list for PBXNativeTarget "GlickrTests" */ = {
 			isa = XCConfigurationList;
@@ -494,6 +672,7 @@
 				36871B071CF21F2100152A6A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		36871B081CF21F2100152A6A /* Build configuration list for PBXNativeTarget "GlickrUITests" */ = {
 			isa = XCConfigurationList;
@@ -502,6 +681,7 @@
 				36871B0A1CF21F2100152A6A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
