@@ -1,0 +1,6 @@
+framework module Timberjack {
+  umbrella header "Timberjack-umbrella.h"
+
+  export *
+  module * { export * }
+}

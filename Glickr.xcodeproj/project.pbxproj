@@ -175,8 +175,8 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 36871B021CF21F2100152A6A /* Build configuration list for PBXNativeTarget "Glickr" */;
 			buildPhases = (
-				36871B0B1CF21FE800152A6A /* Increment Build Number */,
 				0D70B571A05E3B8DCDC01EA0 /* 📦 Check Pods Manifest.lock */,
+				36871B0B1CF21FE800152A6A /* Increment Build Number */,
 				36871AD41CF21F2100152A6A /* Sources */,
 				36871AD51CF21F2100152A6A /* Frameworks */,
 				36871AD61CF21F2100152A6A /* Resources */,

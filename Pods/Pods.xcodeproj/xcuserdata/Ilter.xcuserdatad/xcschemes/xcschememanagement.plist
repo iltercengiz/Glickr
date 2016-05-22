@@ -4,6 +4,36 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>Alamofire.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>AlamofireObjectMapper.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>FontAwesome.swift-FontAwesome.swift.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>FontAwesome.swift.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Mockingjay.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>ObjectMapper.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Pods-Glickr.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -19,20 +49,70 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>Timberjack.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>URITemplate.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>85F8D33402D0215ADB1F731E92314B98</key>
+		<key>0732A1E0BCD959834B5BE747FB0FDF5E</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>9627AFBB2FE15BCDD6A75E747305CEED</key>
+		<key>1088253F42C36418734CF3D95E31B8AA</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>4A1DDF0AE41F6B17F9F3EDDCA1186843</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>500610E8EB8D9A8F10FED42B51A6C7CC</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>6F2352841B5A8234AF04BE931439BE9D</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>79C040AFDDCE1BCBF6D8B5EB0B85887F</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
 		<key>9CC594211710C56199219BBD028BE426</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>9E64D3E3A7AD1A87C822114B7473AE1E</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>C5CBCAA97E951CC882334464FBDF983D</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>EFD8B50DDA189E22AB0379C0B4875C67</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>FBD082A0D35F7917EAB9DD9D3CCA9976</key>
 		<dict>
 			<key>primary</key>
 			<true/>

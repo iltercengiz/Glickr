@@ -6,10 +6,21 @@ target 'Glickr' do
   use_frameworks!
   
   # Pods for Glickr
+  pod 'Alamofire'
+  pod 'ObjectMapper'
+  pod 'AlamofireObjectMapper'
+  pod 'Timberjack'
+  
+  pod 'FontAwesome.swift'
+  
+  pod 'Fabric'
+  pod 'Crashlytics'
+  pod 'Reveal-iOS-SDK', :configurations => ['Debug']
   
   target 'GlickrTests' do
     inherit! :search_paths
     # Pods for testing
+    pod 'Mockingjay'
   end
   
   target 'GlickrUITests' do
