@@ -21,16 +21,19 @@ class GlickrTests: XCTestCase {
         super.tearDown()
     }
     
-    func testExample() {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
-    }
-    
-    func testPerformanceExample() {
-        // This is an example of a performance test case.
-        self.measureBlock {
-            // Put the code you want to measure the time of here.
+    func testRecents() {
+        let expectation = expectationWithDescription("Recent photos")
+        FlickrAPIClient.recentPhotos(0, handler: { (photos, page, pages, total) in
+            XCTAssertEqual(page, 1)
+            XCTAssertEqual(pages, 10)
+            XCTAssertEqual(total, 1000)
+            XCTAssertGreaterThan(photos.count, 0)
+            expectation.fulfill()
+        }) { (error) in
+            XCTAssert(false, "Recent photos failed: \(error?.localizedDescription)")
+            expectation.fulfill()
         }
+        waitForExpectationsWithTimeout(60) { (error) in }
     }
     
 }

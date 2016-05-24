@@ -1,0 +1,31 @@
+//
+//  ParameterParser.swift
+//  Glickr
+//
+//  Created by Ilter Cengiz on 22/05/16.
+//  Copyright © 2016 Ilter Cengiz. All rights reserved.
+//
+
+import Foundation
+import Alamofire
+
+private let HostURL = NSURL(string: "https://api.flickr.com/services/rest/")!
+private let APIKey = "e122a5ef50b9917d53146071a27ba017"
+
+extension URLRequestConvertible {
+    
+    func requestWith(parameters: [String: AnyObject]) -> NSMutableURLRequest {
+        var expandedParameters: [String: AnyObject] = [
+            "format": "json",
+            "nojsoncallback": 1,
+            "api_key": APIKey
+        ]
+        for (key, value) in parameters {
+            expandedParameters[key] = value
+        }
+        let (request, _) = Alamofire.ParameterEncoding.URLEncodedInURL.encode(NSMutableURLRequest(URL: HostURL), parameters: expandedParameters)
+        request.HTTPMethod = Alamofire.Method.GET.rawValue
+        return request
+    }
+    
+}
