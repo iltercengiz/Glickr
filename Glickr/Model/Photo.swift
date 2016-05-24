@@ -23,7 +23,7 @@ class Photo: Mappable {
     var width_l: Int?
     
     required init?(_ map: Map) {
-        if map["url_l"].value() == nil {
+        if map.JSONDictionary["url_l"] == nil {
             return nil
         }
     }
