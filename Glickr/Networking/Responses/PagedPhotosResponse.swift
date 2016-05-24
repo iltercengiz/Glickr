@@ -15,7 +15,7 @@ class PagedPhotosResponse: Response {
     var pages: Int?
     var perpage: Int?
     var total: Int?
-    var photo: [Photo]?
+    var photos: [Photo]?
     
     required init?(_ map: Map) {
         super.init(map)
@@ -37,7 +37,7 @@ class PagedPhotosResponse: Response {
             guard let intValue = value else { return nil }
             return String(intValue)
         }))
-        photo <- map["photo"]
+        photos <- map["photo"]
     }
     
 }
