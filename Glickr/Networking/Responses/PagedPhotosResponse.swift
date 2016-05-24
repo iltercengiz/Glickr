@@ -9,7 +9,7 @@
 import Foundation
 import ObjectMapper
 
-class PagedPhotosResponse: Response {
+class PagedPhotosResponse: Mappable {
     
     var page: Int?
     var pages: Int?
@@ -18,11 +18,10 @@ class PagedPhotosResponse: Response {
     var photos: [Photo]?
     
     required init?(_ map: Map) {
-        super.init(map)
+        
     }
     
-    override func mapping(map: Map) {
-        super.mapping(map)
+    func mapping(map: Map) {
         page <- map["page"]
         pages <- map["pages"]
         perpage <- map["perpage"]
@@ -43,12 +42,9 @@ class PagedPhotosResponse: Response {
 }
 
 //    {
-//        "photos": {
-//            "page": 1,
-//            "pages": 10,
-//            "perpage": 100,
-//            "total": 1000, // Can be string in some responses
-//            "photo": []
-//        },
-//        "stat": "ok"
+//        "page": 1,
+//        "pages": 10,
+//        "perpage": 100,
+//        "total": 1000, // Can be string in some responses
+//        "photo": []
 //    }

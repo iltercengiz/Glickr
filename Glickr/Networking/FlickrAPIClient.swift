@@ -23,11 +23,11 @@ class FlickrAPIClient {
                              handler: (photos: [Photo], page: Int, pages: Int, total: Int) -> Void,
                              failure: (error: NSError?) -> Void = { _ in }) {
         manager.request(PhotosRouter.Recents(page: page)).responseObject {
-            (response: Alamofire.Response<PagedPhotosResponse, NSError>) in
-            if let photos = response.result.value?.photos,
-               let page = response.result.value?.page,
-               let pages = response.result.value?.pages,
-               let total = response.result.value?.total {
+            (response: Alamofire.Response<PhotosResponse, NSError>) in
+            if let photos = response.result.value?.photos?.photos,
+               let page = response.result.value?.photos?.page,
+               let pages = response.result.value?.photos?.pages,
+               let total = response.result.value?.photos?.total {
                 handler(photos: photos, page: page, pages: pages, total: total)
             } else {
                 failure(error: response.result.error)
