@@ -14,7 +14,7 @@ private let extras = "owner_name,date_taken,media,url_l"
 
 enum PhotosRouter: URLRequestConvertible {
     
-    case Recents
+    case Recents(page: Int)
     case Search(query: String)
     
     var URLRequest: NSMutableURLRequest {
@@ -28,10 +28,11 @@ enum PhotosRouter: URLRequestConvertible {
         }
         var parameters: [String: AnyObject] {
             switch self {
-            case .Recents:
+            case .Recents(let page):
                 return [
                     "method": method,
-                    "extras": extras
+                    "extras": extras,
+                    "page": page
                 ]
             case .Search(let query):
                 return [
