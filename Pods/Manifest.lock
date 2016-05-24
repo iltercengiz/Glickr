@@ -1,5 +1,9 @@
 PODS:
   - Alamofire (3.4.0)
+  - AlamofireImage (2.4.0):
+    - Alamofire (~> 3.3)
+  - AlamofireNetworkActivityIndicator (1.0.1):
+    - Alamofire (~> 3.3)
   - AlamofireObjectMapper (3.0.0):
     - Alamofire (~> 3.2)
     - ObjectMapper (~> 1.0)
@@ -21,6 +25,8 @@ PODS:
 
 DEPENDENCIES:
   - Alamofire
+  - AlamofireImage
+  - AlamofireNetworkActivityIndicator
   - AlamofireObjectMapper
   - Crashlytics
   - Fabric
@@ -32,6 +38,8 @@ DEPENDENCIES:
 
 SPEC CHECKSUMS:
   Alamofire: c19a627cefd6a95f840401c49ab1f124e07f54ee
+  AlamofireImage: 87408b652e0f5ae5fe364035f15aea8b9b24c77e
+  AlamofireNetworkActivityIndicator: 49a6e39afb947136f7b1872bae2d684957c26697
   AlamofireObjectMapper: 2d16585d06177be0116d76de73497e77437798af
   Crashlytics: c3a2333dea9e2733d2777f730910321fc9e25c0d
   Fabric: caf7580c725e64db144f610ac65cd60956911dc7
@@ -42,6 +50,6 @@ SPEC CHECKSUMS:
   Timberjack: 4181fb4fa5c0c02a0855deb5aa1ade6043db7b42
   URITemplate: 398a48d6559e23b77bd41176b675b017ad1fc959
 
-PODFILE CHECKSUM: c4f3a89e152595c426de7dfe7de60bbfaf246225
+PODFILE CHECKSUM: a7eb26705c4ae835777538e66b531bf8b340eaf8
 
 COCOAPODS: 1.0.0

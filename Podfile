@@ -7,6 +7,8 @@ target 'Glickr' do
   
   # Pods for Glickr
   pod 'Alamofire'
+  pod 'AlamofireImage'
+  pod 'AlamofireNetworkActivityIndicator'
   pod 'ObjectMapper'
   pod 'AlamofireObjectMapper'
   pod 'Timberjack'
