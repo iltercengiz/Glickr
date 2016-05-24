@@ -23,7 +23,8 @@ extension URLRequestConvertible {
         for (key, value) in parameters {
             expandedParameters[key] = value
         }
-        let (request, _) = Alamofire.ParameterEncoding.JSON.encode(NSMutableURLRequest(URL: HostURL), parameters: expandedParameters)
+        let (request, _) = Alamofire.ParameterEncoding.URLEncodedInURL.encode(NSMutableURLRequest(URL: HostURL), parameters: expandedParameters)
+        request.HTTPMethod = Alamofire.Method.GET.rawValue
         return request
     }
     
