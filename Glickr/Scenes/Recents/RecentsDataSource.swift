@@ -14,14 +14,25 @@ class RecentsDataSource: NSObject, PhotosDataSource {
     private(set) var hasNext = false
     private(set) var currentPage = 0
     
-    func photos(page: Int, handler: (photos: [Photo], hasNext: Bool) -> Void) {
+    func firstBatch(handler: FirstBatchHandler) {
+        photos(0, handler: { (photos, range, hasNext) in
+            handler(photos: photos, hasNext: hasNext)
+        })
+    }
+    
+    func nextBatch(handler: NextBatchHandler) {
+        photos(currentPage + 1, handler: handler)
+    }
+    
+    private func photos(page: Int, handler: NextBatchHandler) {
         FlickrAPIClient.recentPhotos(page, handler: { (photos, page, pages, total) in
-            self.photos = photos
-            self.hasNext = (page == pages)
+            let range = self.photos.count..<(self.photos.count + photos.count)
+            self.photos.appendContentsOf(photos)
+            self.hasNext = (page != pages)
             self.currentPage = page
-            handler(photos: self.photos, hasNext: self.hasNext)
+            handler(photos: photos, range: range, hasNext: self.hasNext)
         }) { (error) in
-            handler(photos: [], hasNext: false)
+            handler(photos: [], range: 0..<0, hasNext: false)
         }
     }
     

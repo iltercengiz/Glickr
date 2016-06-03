@@ -24,10 +24,33 @@ class PhotosViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        dataSource?.photos(0, handler: { [weak self] (photos, hasNext) in
+        refreshPhotos()
+    }
+    
+    // MARK: - Private functions
+    
+    private func refreshPhotos() {
+        dataSource?.firstBatch() { [weak self] (photos, hasNext) in
             self?.tableView.reloadData()
             self?.loadingView.hidden = true
-        })
+            self?.removeLoadingCellIfNeeded()
+        }
+    }
+    
+    private func fetchNextPhotos() {
+        dataSource?.nextBatch() { [weak self] (photos, range, hasNext) in
+            let indexPaths = range.map({ NSIndexPath(forRow: $0, inSection: SectionType.Photo.rawValue) })
+            self?.tableView.insertRowsAtIndexPaths(indexPaths, withRowAnimation: .Fade)
+            self?.removeLoadingCellIfNeeded()
+        }
+    }
+    
+    private func removeLoadingCellIfNeeded() {
+        guard tableView.numberOfRowsInSection(SectionType.Loading.rawValue) > 0,
+            let hasNext = dataSource?.hasNext where !hasNext else {
+            return
+        }
+        tableView.deleteRowsAtIndexPaths([NSIndexPath(forRow: 0, inSection: SectionType.Loading.rawValue)], withRowAnimation: .Fade)
     }
     
 }
@@ -67,7 +90,7 @@ extension PhotosViewController: UITableViewDelegate {
     
     func tableView(tableView: UITableView, willDisplayCell cell: UITableViewCell, forRowAtIndexPath indexPath: NSIndexPath) {
         if indexPath.section == SectionType.Loading.rawValue {
-            
+            fetchNextPhotos()
         }
     }
     
