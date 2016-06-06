@@ -35,4 +35,21 @@ class FlickrAPIClient {
         }
     }
     
+    static func searchPhotos(page: Int,
+                             query: String,
+                             handler: (photos: [Photo], page: Int, pages: Int, total: Int) -> Void,
+                             failure: (error: NSError?) -> Void = { _ in }) {
+        manager.request(PhotosRouter.Search(query: query)).responseObject {
+            (response: Alamofire.Response<PhotosResponse, NSError>) in
+            if let photos = response.result.value?.photos?.photos,
+                let page = response.result.value?.photos?.page,
+                let pages = response.result.value?.photos?.pages,
+                let total = response.result.value?.photos?.total {
+                handler(photos: photos, page: page, pages: pages, total: total)
+            } else {
+                failure(error: response.result.error)
+            }
+        }
+    }
+    
 }
