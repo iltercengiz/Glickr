@@ -79,7 +79,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <containerView hidden="YES" opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SaV-gu-gbP">
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SaV-gu-gbP">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <connections>
                                     <segue destination="K9r-DM-FUm" kind="embed" identifier="PhotosViewController" id="Eer-Sa-3xP"/>
@@ -131,7 +131,6 @@
                     </navigationItem>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
-                        <outlet property="photosContainerView" destination="SaV-gu-gbP" id="AcT-am-o0O"/>
                         <outlet property="searchBar" destination="NMS-8y-CRg" id="rM6-ed-WPa"/>
                     </connections>
                 </viewController>
@@ -238,7 +237,7 @@
                                     <outlet property="delegate" destination="K9r-DM-FUm" id="DUX-Bp-cB4"/>
                                 </connections>
                             </tableView>
-                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="BrE-iQ-Ypg" userLabel="Loading View">
+                            <stackView hidden="YES" opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="BrE-iQ-Ypg" userLabel="Loading View">
                                 <rect key="frame" x="140" y="324" width="95" height="20"/>
                                 <subviews>
                                     <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" animating="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="JDO-dZ-1R0" userLabel="Activity Indicator">

@@ -11,7 +11,6 @@ import UIKit
 class SearchViewController: UIViewController {
     
     @IBOutlet private var searchBar: UISearchBar!
-    @IBOutlet private weak var photosContainerView: UIView!
     private var photosViewController: PhotosViewController!
     private var searchDataSource = SearchDataSource()
     
@@ -40,7 +39,6 @@ extension SearchViewController: UISearchBarDelegate {
     
     func searchBarSearchButtonClicked(searchBar: UISearchBar) {
         searchBar.resignFirstResponder()
-        photosContainerView.hidden = false
         photosViewController.dataSource = searchDataSource
     }
     
