@@ -17,25 +17,30 @@ class PhotosViewController: UIViewController {
     
     @IBOutlet private weak var tableView: UITableView!
     @IBOutlet private weak var loadingView: UIStackView!
-    var dataSource: PhotosDataSource?
+    var dataSource: PhotosDataSource? {
+        didSet {
+            refreshPhotos()
+        }
+    }
     private var cellHeights: [NSIndexPath: CGFloat] = [:]
     
     // MARK: - View life cycle
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        refreshPhotos()
     }
     
-    // MARK: - Private functions
+    // MARK: - Public functions
     
-    private func refreshPhotos() {
+    func refreshPhotos() {
         dataSource?.firstBatch() { [weak self] (photos, hasNext) in
             self?.tableView.reloadData()
             self?.loadingView.hidden = true
             self?.removeLoadingCellIfNeeded()
         }
     }
+    
+    // MARK: - Private functions
     
     private func fetchNextPhotos() {
         dataSource?.nextBatch() { [weak self] (photos, range, hasNext) in

@@ -27,6 +27,8 @@
 		368C4B8A1D017D2300B4AA6B /* PhotosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 368C4B871D017D2300B4AA6B /* PhotosViewController.swift */; };
 		368C4B8B1D017D2300B4AA6B /* PhotoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 368C4B881D017D2300B4AA6B /* PhotoTableViewCell.swift */; };
 		36AAF7CE1CF4E1B3007FD222 /* PhotosResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36AAF7CD1CF4E1B3007FD222 /* PhotosResponse.swift */; };
+		36F39E191D05875900B0167B /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36F39E181D05875900B0167B /* SearchViewController.swift */; };
+		36F39E1B1D058DE900B0167B /* SearchDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36F39E1A1D058DE900B0167B /* SearchDataSource.swift */; };
 		7150D50812ACD93ECB95BAEE /* Pods_GlickrTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C149D4BA314F543CE6CCD4E /* Pods_GlickrTests.framework */; };
 		A5A5AF948EA02890D6F2B5BF /* Pods_Glickr.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5969E509935D8ED53CBCC391 /* Pods_Glickr.framework */; };
 /* End PBXBuildFile section */
@@ -76,6 +78,8 @@
 		368C4B871D017D2300B4AA6B /* PhotosViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotosViewController.swift; sourceTree = "<group>"; };
 		368C4B881D017D2300B4AA6B /* PhotoTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoTableViewCell.swift; sourceTree = "<group>"; };
 		36AAF7CD1CF4E1B3007FD222 /* PhotosResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotosResponse.swift; sourceTree = "<group>"; };
+		36F39E181D05875900B0167B /* SearchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		36F39E1A1D058DE900B0167B /* SearchDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchDataSource.swift; sourceTree = "<group>"; };
 		3832A4C0EB96639CB11AE8A3 /* Pods_GlickrUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GlickrUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		49C8D50CE1415D80CCF7C03A /* Pods-GlickrUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GlickrUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-GlickrUITests/Pods-GlickrUITests.release.xcconfig"; sourceTree = "<group>"; };
 		5969E509935D8ED53CBCC391 /* Pods_Glickr.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Glickr.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -211,6 +215,7 @@
 			children = (
 				368C4B851D017D2300B4AA6B /* Photos */,
 				368C4B771D01642000B4AA6B /* Recents */,
+				36F39E171D05870400B0167B /* Search */,
 			);
 			path = Scenes;
 			sourceTree = "<group>";
@@ -240,6 +245,15 @@
 				368C4B881D017D2300B4AA6B /* PhotoTableViewCell.swift */,
 			);
 			path = Photos;
+			sourceTree = "<group>";
+		};
+		36F39E171D05870400B0167B /* Search */ = {
+			isa = PBXGroup;
+			children = (
+				36F39E1A1D058DE900B0167B /* SearchDataSource.swift */,
+				36F39E181D05875900B0167B /* SearchViewController.swift */,
+			);
+			path = Search;
 			sourceTree = "<group>";
 		};
 		70770338CA61119D36CE0A20 /* Frameworks */ = {
@@ -542,7 +556,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				36F39E191D05875900B0167B /* SearchViewController.swift in Sources */,
 				36871B161CF22BCA00152A6A /* Photo.swift in Sources */,
+				36F39E1B1D058DE900B0167B /* SearchDataSource.swift in Sources */,
 				368C4B8A1D017D2300B4AA6B /* PhotosViewController.swift in Sources */,
 				36871B191CF2331900152A6A /* PagedPhotosResponse.swift in Sources */,
 				368C4B801D01642000B4AA6B /* AwesomeTabBarItem.swift in Sources */,
